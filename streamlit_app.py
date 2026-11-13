@@ -29,7 +29,7 @@ div[data-testid="stDataFrame"] {border:1px solid #263B59;border-radius:12px;}
 </style>''', unsafe_allow_html=True)
 
 ROOT=Path(__file__).resolve().parent
-DATA=ROOT/'data'/'b2b_transactions.csv.gz'
+DATA=ROOT/'b2b_transactions.csv.gz'
 @st.cache_data(show_spinner="664 bin işlem kaydı hazırlanıyor…")
 def load_data():
     if not DATA.exists():
